@@ -20,3 +20,7 @@ class CombinatorialTests(TestCase):
 
         self.assertLess(comb.n, 0)
         self.assertEqual(comb.calculate(), 0)
+
+    def test_x_0_n_3(self):
+        comb = Combinatorial(x=0, n=3)
+        self.assertEqual(comb.calculate(), 6)
