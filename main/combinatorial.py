@@ -20,6 +20,8 @@ class Combinatorial:
         self._n = value
 
     def calculate(self):
+        if self._x == self._n:
+            return 1
         if self._n == 3:
             return 6
         if self._n == 4:

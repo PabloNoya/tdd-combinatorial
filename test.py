@@ -28,3 +28,13 @@ class CombinatorialTests(TestCase):
     def test_x_1_n_4(self):
         comb = Combinatorial(x=1, n=4)
         self.assertEqual(24, comb.calculate())
+
+    def test_x_equal_n(self):
+        comb = Combinatorial(x=10, n=10)
+        self.assertEqual(1, comb.calculate())
+
+    def test_x_1_n_1(self):
+        comb = Combinatorial(x=1, n=1)
+        self.assertEqual(comb.x, comb.n)
+        self.assertEqual(1, comb.calculate())
+
