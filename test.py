@@ -38,3 +38,8 @@ class CombinatorialTests(TestCase):
         self.assertEqual(comb.x, comb.n)
         self.assertEqual(1, comb.calculate())
 
+    def test_x_n_string(self):
+        comb = Combinatorial(x="1", n="1")
+        comb.calculate()
+        self.assertRaises(TypeError)
+
