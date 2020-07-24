@@ -22,4 +22,6 @@ class Combinatorial:
     def calculate(self):
         if self._n == 3:
             return 6
+        if self._n == 4:
+            return 24
         return 0

@@ -23,4 +23,8 @@ class CombinatorialTests(TestCase):
 
     def test_x_0_n_3(self):
         comb = Combinatorial(x=0, n=3)
-        self.assertEqual(comb.calculate(), 6)
+        self.assertEqual(6, comb.calculate())
+
+    def test_x_1_n_4(self):
+        comb = Combinatorial(x=1, n=4)
+        self.assertEqual(24, comb.calculate())
